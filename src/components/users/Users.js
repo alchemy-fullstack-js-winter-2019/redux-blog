@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import User from './User';
 
 function Users({ users }) {
   const listOfUsers = users.map(user => {
     return (
-      <li key={user.id}>{user.username}</li>
+      <User key={user.id} user={user} />
     );
   });
 

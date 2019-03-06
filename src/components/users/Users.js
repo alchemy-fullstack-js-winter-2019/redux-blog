@@ -1,8 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Users({users}) {
-  const listOfUsers = users.map(user => <li key={user.id}>{user}</li>);
+function Users({ users }) {
+  const listOfUsers = users.map(user => {
+    return (
+      <li key={user.id}>{user.username}</li>
+    );
+  });
 
   return (
     <>
@@ -10,7 +14,7 @@ function Users({users}) {
       {listOfUsers}
     </ul>
     </>
-  )
+  );
 }
 
 Users.propTypes = {

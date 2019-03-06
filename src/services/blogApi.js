@@ -1,5 +1,4 @@
-export const getUsers = () => {
+export const getUsersApi = () => {
   return fetch('https://jsonplaceholder.typicode.com/users')
-    .then(res => res.json())
-    
+    .then(res => res.json());
 };

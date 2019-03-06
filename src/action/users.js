@@ -9,7 +9,7 @@ export const fetchUsers = () => ({
 
 export const FETCH_USER = 'FETCH_USER';
 
-export const fetchUser = () => ({
+export const fetchUser = (id) => ({
   type: FETCH_USER,
-  payload: getUser()
+  payload: getUser(id)
 });

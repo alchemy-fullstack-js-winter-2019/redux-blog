@@ -18,6 +18,7 @@ class User extends PureComponent {
   };
 
   componentDidMount() {
+    console.log('Match', this.props.match.params.id);
     this.props.fetch(this.props.match.params.id);
   }
 
@@ -34,9 +35,10 @@ const mapStateToProps = state => ({
   user: getUser(state)
 });
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch, props) => ({
   fetch() {
-    dispatch(fetchUser());
+    console.log('PROPS', props);
+    dispatch(fetchUser(props.match.params.id));
   }
 });
 

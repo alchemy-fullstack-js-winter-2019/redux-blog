@@ -4,6 +4,7 @@ export const getUsersApi = () => {
 };
 
 export const getUser = id => {
+  console.log('ID', id);
   return fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
     .then(res => res.json());
 };

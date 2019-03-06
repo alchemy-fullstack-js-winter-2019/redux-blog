@@ -1,5 +1,7 @@
+import { getPostsApi } from '../services/jsonApi';
+
 export const GET_POSTS = 'GET_POSTS';
-export const getPost = () => ({
+export const getPosts = () => ({
   type: GET_POSTS,
-  payload: getPostApi()
+  payload: getPostsApi()
 });

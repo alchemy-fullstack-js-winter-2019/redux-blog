@@ -1,11 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
-function User({user}) {
-  
+function User({ user }) {
   return (
-    <li key={user.id}>{user.username}</li>
-  )
+    <Link to={`/users/${user.id}`}>
+      <li key={user.id}>
+        {user.username}
+      </li>
+    </Link>
+  );
 }
 
 User.propTypes = {

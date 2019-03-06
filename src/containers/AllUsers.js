@@ -18,7 +18,7 @@ class AllUsers extends PureComponent {
   render() {
     return (
       <>
-      <Users users={this.props.users} />
+        <Users users={this.props.users} />
       </>
     );
   }

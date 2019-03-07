@@ -11,3 +11,9 @@ export const fetchPost = id => ({
   type: FETCH_POST,
   payload: getPost(id)
 });
+
+export const UPDATE_POST_SEARCH_TERM = 'UPDATE_POST_SEARCH_TERM';
+export const updatePostSearchTerm = term => ({
+  type: UPDATE_POST_SEARCH_TERM,
+  payload: term
+}); 

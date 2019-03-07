@@ -1,15 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Comment from './Comment';
-
 
 function Comments({ comments }) {
   const listOfComments = comments.map(comment => {
     return (
-      <Comment key={comment.id} comment={comment} />
+      <li key={comment.id}>{comment.name}</li>
     );
   });
-
+  console.log('HELLOOOOOO', comments);
   return (
     <ul>
       {listOfComments}

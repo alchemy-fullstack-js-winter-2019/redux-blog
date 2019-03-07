@@ -5,7 +5,7 @@ import PostDetail from '../components/posts/PostDetail';
 import { getPost } from '../selectors/posts/posts';
 import { fetchPost } from '../action/posts';
 import { withRouter } from 'react-router-dom';
-
+import AllComments from './AllComments';
 class Post extends PureComponent {
   static propTypes = {
     post: PropTypes.object.isRequired,
@@ -24,7 +24,8 @@ class Post extends PureComponent {
   render() {
     return (
       <>
-      <PostDetail post={this.props.post}/>
+        <PostDetail post={this.props.post}/>
+        <AllComments />
       </>
     );
   }
@@ -37,7 +38,6 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = (dispatch, props) => ({
   fetch() {
     dispatch(fetchPost(props.match.params.id));
-    console.log('PAIGEEEEEEEE!', props.match.params.id);
   }
 });
 

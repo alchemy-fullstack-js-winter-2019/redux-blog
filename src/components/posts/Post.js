@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Post(postTitle) {
+function Post({ postTitle }) {
+  console.log('pleeeease', postTitle);
   return (
     <>
-      {postTitle}
+      <li>{postTitle}</li>
     </>
   );
 }

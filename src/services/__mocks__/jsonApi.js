@@ -3,3 +3,8 @@ export const getPostsApi = () => {
     'posts'
   ]);
 };
+export const getUserById = () => {
+  return Promise.resolve({
+    name:'user'
+  });
+};

@@ -2,7 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import Home from './components/home/Home';
 import Posts from './containers/posts/AllPosts';
-import PostDetails from './components/posts/PostDetails';
+import PostDetailsContainer from './containers/posts/PostDetailContainer';
 
 export const ROUTES  = {
   HOME: {
@@ -17,7 +17,7 @@ export const ROUTES  = {
   },
   POSTS_DETAILS: {
     path: '/posts/:userId/:id',
-    component: PostDetails,
+    component: PostDetailsContainer,
     linkTo: () => '/posts/:userId/:id'
 
   }

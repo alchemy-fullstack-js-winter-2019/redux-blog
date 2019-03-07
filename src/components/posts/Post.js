@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
-function Post({ postTitle }) {
-  console.log('pleeeease', postTitle);
+function Post({ post }) {
   return (
     <>
-      <li>{postTitle}</li>
+      <Link to={`${post.userId}/${post.id}`}><li>{post.title}</li></Link>
     </>
   );
 }
 
 Post.propTypes = {
-  postTitle: PropTypes.string.isRequired
+  post: PropTypes.object.isRequired
 };
 
 export default Post;

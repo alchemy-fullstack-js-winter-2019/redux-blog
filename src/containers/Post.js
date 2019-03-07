@@ -25,6 +25,7 @@ class Post extends PureComponent {
     return (
       <>
         <PostDetail post={this.props.post}/>
+        <h2>Comments:</h2>
         <AllComments />
       </>
     );

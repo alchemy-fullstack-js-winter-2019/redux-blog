@@ -1,5 +1,2 @@
-export const getComments = state => {
-  console.log(state.comments.comments);
-  return state.comments.comments;
-};
+export const getComments = state => state.comments.comments;
 

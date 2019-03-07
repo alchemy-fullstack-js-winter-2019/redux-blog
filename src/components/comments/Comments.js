@@ -4,10 +4,12 @@ import PropTypes from 'prop-types';
 function Comments({ comments }) {
   const listOfComments = comments.map(comment => {
     return (
-      <li key={comment.id}>{comment.name}</li>
+      <li key={comment.id}>
+        {comment.name}
+        {comment.body}
+      </li>
     );
   });
-  console.log('HELLOOOOOO', comments);
   return (
     <ul>
       {listOfComments}

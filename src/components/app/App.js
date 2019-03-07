@@ -7,21 +7,18 @@ import {
 } from 'react-router-dom';
 
 
-
-
-
 export default function App() {
   const listOfRoutes = getRoutes(ROUTES);
   return (
 
-    <>
     <Router>
+      <>
+      <Header/>
       <Switch>
         {listOfRoutes}
       </Switch> 
+      </>
     </Router>
-    <Header/>
     
-    </>
   );
 }

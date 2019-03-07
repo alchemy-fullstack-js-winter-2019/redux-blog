@@ -9,10 +9,8 @@ import {
 
 export default function Header() {
   return (
-    <Router>
-      <nav>
-        <Link to='/home'> Home </ Link>
-      </nav>
-    </Router>
+    <nav>
+      <Link to='/home'> Home </ Link>
+    </nav>
   );
 }

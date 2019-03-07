@@ -1,8 +1,9 @@
-import { FETCH_USERS, FETCH_USER } from '../action/users';
+import { FETCH_USERS, FETCH_USER, FETCH_POST_BY_USER_ID } from '../action/users';
 
 const initialState = {
   users: [],
-  user: {}
+  user: {},
+  posts: []
 };
 
 export default function reducers(state = initialState, action) {
@@ -10,7 +11,11 @@ export default function reducers(state = initialState, action) {
     case FETCH_USERS:
       return { ...state, users: action.payload };
     case FETCH_USER:
+      console.log('Goodbye');
       return { ...state, user: action.payload };
+    case FETCH_POST_BY_USER_ID:
+      console.log('Hello');
+      return { ...state, posts: action.payload };
     default:
       return state;
   }

@@ -20,17 +20,18 @@ export default class PostDetails extends PureComponent {
   }
   render() {
     const { name, email, website } = this.props.user;
-    const { title } = this.props.post;
+    const { title, body } = this.props.post;
     const { comments } = this.props;
 
     return (
     <>
-      <p>
+      <p> author details: 
         {name}
         {email}
         {website}
       </p>
-      <h2> {title}</h2>
+      <h2> title: {title}</h2>
+      <p>body: {body}</p>
       <CommentList comments={comments}/>
     </>
     );

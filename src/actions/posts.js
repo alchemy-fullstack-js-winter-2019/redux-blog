@@ -1,7 +1,8 @@
 import { 
   getPostsApi, 
   getUserById, 
-  getPostById, 
+  getPostById,
+  getPostsById, 
   getCommentsById,
   getAllUsers } from '../services/jsonApi';
 
@@ -35,3 +36,10 @@ export const getCommentsByIdAction = (id) => ({
   payload: getCommentsById(id)
 });
 
+
+export const GET_USER_POSTS = 'GET_USER_POSTS';
+
+export const getPostsByIdAction = (id) => ({
+  type: GET_USER_POSTS,
+  payload: getPostsById(id)
+});

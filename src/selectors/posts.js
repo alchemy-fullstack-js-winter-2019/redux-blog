@@ -10,3 +10,4 @@ export const getCommentsById = state => {
   return state.posts.comments;
 };
 
+export const getPostsById = state => state.users.postsByUser;

@@ -1,4 +1,4 @@
-import { getPostsApi, getUserById } from '../services/jsonApi';
+import { getPostsApi, getUserById, getPostById, getCommentsById } from '../services/jsonApi';
 
 export const GET_POSTS = 'GET_POSTS';
 export const getPostsAction = () => ({
@@ -10,5 +10,17 @@ export const GET_USER = 'GET_USER';
 export const getUserAction = (id) => ({
   type: GET_USER,
   payload: getUserById(id)
+});
+export const GET_POST = 'POST';
+export const getPostAction = (id) => ({
+  type: GET_POST,
+  payload: getPostById(id)
+});
+
+
+export const GET_COMMENTS_BY_ID = 'GET_COMMENTS_BY_ID';
+export const getCommentsByIdAction = (id) => ({
+  type: GET_COMMENTS_BY_ID,
+  payload: getCommentsById(id)
 });
 

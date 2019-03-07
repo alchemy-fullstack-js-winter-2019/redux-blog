@@ -1,22 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Posts Snapshot matches a snapshot 1`] = `
-<ul>
-  <a
-    href="/posts/1"
-    onClick={[Function]}
-  >
-    <li>
-      sunt aut facere repellat provident occaecati excepturi optio reprehenderit
-    </li>
-  </a>
-  <a
-    href="/posts/2"
-    onClick={[Function]}
-  >
-    <li>
-      qui est esse
-    </li>
-  </a>
-</ul>
+Array [
+  <input
+    name="term"
+    onChange={[MockFunction]}
+    type="text"
+    value="term"
+  />,
+  <ul>
+    <a
+      href="/posts/1"
+      onClick={[Function]}
+    >
+      <li>
+        sunt aut facere repellat provident occaecati excepturi optio reprehenderit
+      </li>
+    </a>
+    <a
+      href="/posts/2"
+      onClick={[Function]}
+    >
+      <li>
+        qui est esse
+      </li>
+    </a>
+  </ul>,
+]
 `;

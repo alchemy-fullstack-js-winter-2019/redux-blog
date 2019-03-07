@@ -20,7 +20,7 @@ describe('Posts Snapshot', () => {
       }];
     const tree = renderer.create(
       <MemoryRouter>
-        <Posts posts={postsTest} />
+        <Posts posts={postsTest} term='term' onChange={jest.fn()}/>
       </MemoryRouter>
     ).toJSON();
     expect(tree).toMatchSnapshot();

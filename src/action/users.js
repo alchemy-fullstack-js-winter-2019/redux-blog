@@ -1,9 +1,9 @@
-import { getUsersApi, getUser } from '../services/blogApi';
+import { getUsers, getUser } from '../services/blogApi';
 
 export const FETCH_USERS = 'FETCH_USERS';
 export const fetchUsers = () => ({
   type: FETCH_USERS,
-  payload: getUsersApi()
+  payload: getUsers()
 });
 
 export const FETCH_USER = 'FETCH_USER';

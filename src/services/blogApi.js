@@ -1,4 +1,4 @@
-export const getUsersApi = () => {
+export const getUsers = () => {
   return fetch('https://jsonplaceholder.typicode.com/users')
     .then(res => res.json());
 };
@@ -14,7 +14,11 @@ export const getPosts = () => {
 };
 
 export const getPost = id => {
-  console.log('PAIGE', id);
   return fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
+    .then(res => res.json());
+};
+
+export const getComments = () => {
+  return fetch('https://jsonplaceholder.typicode.com/comments')
     .then(res => res.json());
 };

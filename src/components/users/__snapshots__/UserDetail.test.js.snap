@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserDetail Snapshot matches a snapshot 1`] = `
+<div>
+  <h1>
+    Leanne Graham
+  </h1>
+  <p>
+    Bret
+  </p>
+  <p>
+    Sincere@april.biz
+  </p>
+</div>
+`;

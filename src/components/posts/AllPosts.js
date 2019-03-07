@@ -24,14 +24,12 @@ class AllPosts extends PureComponent {
   };
 
   componentDidMount(){
-    console.log(this.props.posts, 'thissss');
     this.props.fetch();
   }
   render() {
-    console.log('other', this.props.posts);
     const { posts } = this.props;
-    const postList = posts.map(post =>{
-      return <li key={post}><Post post={post.title} /></li>;
+    const postList = posts.map((post) =>{
+      return <Post key={post.id} postTitle={post.title} />;
     });
     return (
       <ul>{postList}</ul> 

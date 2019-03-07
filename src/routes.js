@@ -2,8 +2,9 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import Home from './components/home/Home';
 import Posts from './containers/posts/AllPosts';
-import AllUsers from './containers/AllUsers';
+import AllUsers from './containers/users/AllUsersContainer';
 import PostDetailsContainer from './containers/posts/PostDetailContainer';
+import UserDetailContainer from './containers/users/UserDetailContainer'
 
 export const ROUTES  = {
   HOME: {
@@ -27,6 +28,11 @@ export const ROUTES  = {
     component: AllUsers,
     linkTo: () => '/users'
 
+  },
+  USER_DETAILS: {
+    path: '/users/:userId',
+    component: UserDetailContainer,
+    linkTo: () => '/users/:userId'
   }
 };
 

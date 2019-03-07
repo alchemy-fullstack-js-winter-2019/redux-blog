@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function User({ user }) {
   return (
-    <Link to={`/users/${user.username}`}><li>{user.name}</li>
+    <Link to={`/users/${user.id}`}><li>{user.name}</li>
     </Link>
   );
 }

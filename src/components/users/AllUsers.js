@@ -14,8 +14,8 @@ class AllUsers extends PureComponent {
 
   render() {
     const { users } = this.props;
-    const userList = users.map((user) => {
-      return <User key={user} user={user} />;
+    const userList = users.map((user, i) => {
+      return <User key={i} user={user} />;
     });
 
     return (

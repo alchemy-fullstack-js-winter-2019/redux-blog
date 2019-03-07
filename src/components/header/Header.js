@@ -10,6 +10,7 @@ export default function Header() {
   return (
     <nav>
       <Link to='/home'> Home </ Link>
+      <Link to='/posts'> Posts </ Link>
     </nav>
   );
 }

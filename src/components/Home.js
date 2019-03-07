@@ -4,8 +4,8 @@ import Header from './Header';
 function Home() {
   return (
     <>
-      <h1>YO YO ITS HOME</h1>
       <Header />
+      <h1>YO YO ITS HOME</h1>
     </>
   );
 }

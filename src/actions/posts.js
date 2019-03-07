@@ -1,9 +1,20 @@
-import { getPostsApi, getUserById, getPostById, getCommentsById } from '../services/jsonApi';
+import { 
+  getPostsApi, 
+  getUserById, 
+  getPostById, 
+  getCommentsById,
+  getAllUsers } from '../services/jsonApi';
 
 export const GET_POSTS = 'GET_POSTS';
 export const getPostsAction = () => ({
   type: GET_POSTS,
   payload: getPostsApi()
+});
+
+export const GET_ALL_USERS = 'GET_ALL_USERS';
+export const getUsersAction  = () => ({
+  type: GET_ALL_USERS,
+  payload: getAllUsers()
 });
 
 export const GET_USER = 'GET_USER';

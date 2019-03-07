@@ -2,6 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import Home from './components/home/Home';
 import Posts from './containers/posts/AllPosts';
+import AllUsers from './containers/AllUsers';
 import PostDetailsContainer from './containers/posts/PostDetailContainer';
 
 export const ROUTES  = {
@@ -19,6 +20,12 @@ export const ROUTES  = {
     path: '/posts/:userId/:id',
     component: PostDetailsContainer,
     linkTo: () => '/posts/:userId/:id'
+
+  },
+  USERS: {
+    path: '/users',
+    component: AllUsers,
+    linkTo: () => '/users'
 
   }
 };

@@ -1,16 +1,17 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
-function PostDetails({ post }) {
+function PostDetails() {
   return (
     <>
-      {post}
+    <h1>HI</h1>
+      {/* {post} */}
     </>
   );
 }
 
-PostDetails.propTypes = {
-  post: PropTypes.object.isRequired
-};
+// PostDetails.propTypes = {
+//   post: PropTypes.object.isRequired
+// };
 
 export default PostDetails;

@@ -2,6 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import Home from './components/home/Home';
 import Posts from './containers/posts/AllPosts';
+import PostDetails from './components/posts/PostDetails';
 
 export const ROUTES  = {
   HOME: {
@@ -13,11 +14,17 @@ export const ROUTES  = {
     path: '/posts',
     component: Posts,
     linkTo: () => '/posts'
+  },
+  POSTS_DETAILS: {
+    path: '/posts/:userId/:id',
+    component: PostDetails,
+    linkTo: () => '/posts/:userId/:id'
+
   }
 };
 
 export const getRoutes = () => {
   return Object.values(ROUTES).map(route => {
-    return <Route key={route.path} path={route.path} component={route.component} />;
+    return <Route exact key={route.path} path={route.path} component={route.component} />;
   });
 };

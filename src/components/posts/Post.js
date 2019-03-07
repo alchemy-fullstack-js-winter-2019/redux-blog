@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Post({ post }) {
   return (
     <>
-      <Link to={`${post.userId}/${post.id}`}><li>{post.title}</li></Link>
+      <Link to={`/posts/${post.userId}/${post.id}`}><li>{post.title}</li></Link>
     </>
   );
 }

@@ -10,11 +10,9 @@ function Users({ users }) {
   });
 
   return (
-    <>
     <ul>
       {listOfUsers}
     </ul>
-    </>
   );
 }
 

@@ -3,6 +3,7 @@ import AllUsers from '../../containers/AllUsers';
 import User from '../../containers/User';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from '../Home';
+import Posts from '../../components/posts/Posts';
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/users" component={AllUsers} />
         <Route exact path="/users/:id" component={User} />
+        <Route exact path="/posts" component={Posts} />
       </Switch>
     </Router>
     </>

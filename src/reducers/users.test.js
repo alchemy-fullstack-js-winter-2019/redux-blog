@@ -39,3 +39,4 @@ describe('reducer test', () => {
     expect(reducerUser).toEqual({ posts: ['orange', 'banana', '420'] });
   });
 });
+

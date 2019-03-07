@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Post from './Post';
 
 function Posts({ posts }) {
-  console.log(posts);
   const listOfPosts = posts.map(post => {
     return (
-      <li key={post.id}>{post.title}</li>
+      <Post key={post.id} post={post} />
     );
   });
   return (

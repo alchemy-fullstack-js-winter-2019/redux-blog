@@ -1,11 +1,8 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { getPostsAction } from '../../actions/posts';
-import { getLongestPost } from '../../selectors/posts';
 import { Link } from 'react-router-dom';
 
-class Home extends PureComponent {
+export default class Home extends PureComponent {
   static propTypes = {
     posts: PropTypes.array.isRequired,
     fetchPosts: PropTypes.func.isRequired
@@ -22,25 +19,10 @@ class Home extends PureComponent {
     });
     return (
       <>
-      <h1> HOME COMPONENT </h1>
+      <h1> ALL HAIL TEAM YEEZY </h1>
       <ul>{postList}</ul>
       </>
     );
   }
 }
 
-const mapStateToProps = state => ({
-  posts: getLongestPost(state)
-});
-
-const mapDispatchToProps = dispatch => ({
-  fetchPosts() {
-    dispatch(getPostsAction());
-  }
-});
-
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Home);

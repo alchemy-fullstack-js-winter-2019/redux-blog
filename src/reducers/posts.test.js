@@ -1,6 +1,5 @@
 import reducer from './posts';
 import { getPostsAction, getUserAction, getPostAction, getCommentsByIdAction, updateSearchTerm } from '../actions/posts';
-import { getCommentsById } from '../services/jsonApi';
 
 
 jest.mock('../services/jsonApi.js');

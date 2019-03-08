@@ -1,5 +1,7 @@
 import reducer from './users';
 import { FETCH_POST_BY_USER_ID, FETCH_USER, FETCH_USERS } from '../action/users';
+import { RESET } from '../action/common/reset';
+
 
 describe('reducer test', () => {
   it('can handle the fetch users from state', () => {
@@ -37,6 +39,15 @@ describe('reducer test', () => {
       payload: ['orange', 'banana', '420']
     });
     expect(reducerUser).toEqual({ posts: ['orange', 'banana', '420'] });
+  });
+  it('can reset users', () => {
+    const state = {
+      users: ['orange', 'banana', '420']
+    };
+    const reducerReset = reducer(state, {
+      type: RESET
+    });
+    expect(reducerReset).toEqual({ users: [], posts: [], user: {} });
   });
 });
 

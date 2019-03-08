@@ -20,7 +20,7 @@ class AllPosts extends PureComponent {
   render() {
     return (
       <>
-        <Posts {...this.props} />
+        <Posts {...this.props}/>
       </>
     );
   }

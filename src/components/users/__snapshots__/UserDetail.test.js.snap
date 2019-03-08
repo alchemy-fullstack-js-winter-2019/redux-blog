@@ -11,5 +11,13 @@ exports[`UserDetail Snapshot matches a snapshot 1`] = `
   <p>
     Sincere@april.biz
   </p>
+  <ul>
+    <li>
+      sunt aut facere repellat provident occaecati excepturi optio reprehenderit
+    </li>
+    <li>
+      qui est esse
+    </li>
+  </ul>
 </div>
 `;

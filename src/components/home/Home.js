@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getPostsAction } from '../../actions/posts';
 import { getLongestPost } from '../../selectors/posts';
-
+import { Link } from 'react-router-dom';
 
 class Home extends PureComponent {
   static propTypes = {
@@ -18,7 +18,7 @@ class Home extends PureComponent {
   render() {
     const { posts } = this.props;
     const postList = posts.map((post, i) => {
-      return <li key={i}>{post}</li>;
+      return <Link key={i} to={`/posts/${post.userId}/${post.id}`}><li key={i}>{post.body}</li></Link>;
     });
     return (
       <>

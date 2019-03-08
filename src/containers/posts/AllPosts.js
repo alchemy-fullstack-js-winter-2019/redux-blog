@@ -1,17 +1,20 @@
-// import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import AllPosts from '../../components/posts/AllPosts';
-import { getPostsAction } from '../../actions/posts';
-import { getPosts } from '../../selectors/posts';
+import { getPostsAction, updateSearchTerm } from '../../actions/posts';
+import { getPostsBySearch, getSearchTerm } from '../../selectors/posts';
 
 
 const mapStateToProps = state => ({
-  posts: getPosts(state)
+  posts: getPostsBySearch(state),
+  term: getSearchTerm(state)
 });
 
 const mapDispatchToProps = dispatch => ({
   fetch() {
     dispatch(getPostsAction());
+  },
+  onChange({ target }) {
+    dispatch(updateSearchTerm(target.value));
   }
 });
 

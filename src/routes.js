@@ -4,7 +4,7 @@ import Home from './components/home/Home';
 import Posts from './containers/posts/AllPosts';
 import AllUsers from './containers/users/AllUsersContainer';
 import PostDetailsContainer from './containers/posts/PostDetailContainer';
-import UserDetailContainer from './containers/users/UserDetailContainer'
+import UserDetailContainer from './containers/users/UserDetailContainer';
 
 export const ROUTES  = {
   HOME: {

@@ -1,19 +1,19 @@
 import UserDetails from '../../components/users/UserDetails';
 import { connect } from 'react-redux';
-import { getUser, getPosts } from '../../selectors/posts';
-import { getUserAction, getPostsAction } from '../../actions/posts';
+import { getUser, getPostsById } from '../../selectors/posts';
+import { getUserAction, getPostsByIdAction } from '../../actions/posts';
 
 const mapStateToProps = state => ({
   user: getUser(state),
-  posts: getPosts(state),
+  posts: getPostsById(state),
 });
 
 const mapDispatchToProps = dispatch => ({
   fetchUser(id) {
     dispatch(getUserAction(id));
   },
-  fetchPosts() {
-    dispatch(getPostsAction());
+  fetchPosts(id) {
+    dispatch(getPostsByIdAction(id));
   }
 });
 

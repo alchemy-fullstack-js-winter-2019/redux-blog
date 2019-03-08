@@ -13,14 +13,16 @@ export default class UserDetails extends PureComponent {
 
   componentDidMount() {
     this.props.fetchUser(this.props.match.params.userId);
+    this.props.fetchPosts(this.props.match.params.userId);
   }
   render() {
     const { name, email, username } = this.props.user;
     const { posts } = this.props;
-    const postsList = posts.map((post, i) => {
-      <Link to={`/posts/:${post.userId}/${post.id}`} ><li key={i}>{post.title}</li></Link>;
+
+    const postsList = posts.map(post => {
+      return <Link key={post.title} to={`/posts/${post.userId}/${post.id}`}><li>{post.title}</li></Link>;
     });
-    // console.log(this.params.match);
+
     return (
       <>
       <h2> User details: </h2>

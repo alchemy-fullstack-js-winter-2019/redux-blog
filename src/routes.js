@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import Home from './components/home/Home';
+import Home from './containers/HomeContainer';
 import Posts from './containers/posts/AllPosts';
 import AllUsers from './containers/users/AllUsersContainer';
 import PostDetailsContainer from './containers/posts/PostDetailContainer';

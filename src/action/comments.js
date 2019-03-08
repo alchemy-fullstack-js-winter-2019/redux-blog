@@ -1,11 +1,9 @@
 import { getComments } from '../services/blogApi';
+import { createAction } from 'promise-middleware-redux';
 
-export const LOAD_COMMENTS_START = 'LOAD_COMMENTS_START';
-export const LOAD_COMMENTS_END = 'LOAD_COMMENTS_END';
-export const FETCH_COMMENTS = 'FETCH_COMMENTS';
-export const fetchComments = id => ({
-  type: FETCH_COMMENTS,
-  loadStart: LOAD_COMMENTS_START,
-  payload: getComments(id),
-  loadEnd: LOAD_COMMENTS_END
-});
+export const [ 
+  fetchComments, 
+  FETCH_COMMENTS, 
+  LOAD_COMMENTS_START, 
+  LOAD_COMMENTS_END 
+] = createAction('FETCH_COMMENTS', getComments);

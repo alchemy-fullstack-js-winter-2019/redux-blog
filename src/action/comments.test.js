@@ -11,7 +11,7 @@ describe('comments actions', () => {
     const fetchedComments = fetchComments();
     expect(fetchedComments).toEqual({
       type: 'FETCH_COMMENTS',
-      loadStart: LOAD_COMMENTS_START,
+      pendingType: LOAD_COMMENTS_START,
       payload: Promise.resolve(
         {
           'postId': 1,
@@ -27,7 +27,8 @@ describe('comments actions', () => {
           'email': 'Jayne_Kuhic@sydney.com',
           'body': 'est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et'
         }),
-      loadEnd: LOAD_COMMENTS_END
+      rejectedType: 'FETCH_COMMENTS_REJECTED',
+      fulfilledType: LOAD_COMMENTS_END
     });
   });
 });

@@ -17,8 +17,9 @@ describe('users actions', () => {
     const fetchedUser = fetchUser();
     expect(fetchedUser).toEqual({
       type: 'FETCH_USER',
-      loadStart: LOAD_USER_START,
-      loadEnd: LOAD_USER_END,
+      pendingType: LOAD_USER_START,
+      rejectedType: 'FETCH_USER_REJECTED',
+      fulfilledType: LOAD_USER_END,
       payload: Promise.resolve(
         {
           'id': 1,
@@ -50,8 +51,9 @@ describe('users actions', () => {
     const fetchedUsers = fetchUsers();
     expect(fetchedUsers).toEqual({
       type: 'FETCH_USERS',
-      loadStart: LOAD_USERS_START,
-      loadEnd: LOAD_USERS_END,
+      pendingType: LOAD_USERS_START,
+      rejectedType: 'FETCH_USERS_REJECTED',
+      fulfilledType: LOAD_USERS_END,
       payload: Promise.resolve(
         {
           'id': 1,
@@ -106,8 +108,9 @@ describe('users actions', () => {
     const fetchedPostByUserId = fetchPostByUserId();
     expect(fetchedPostByUserId).toEqual({
       type: 'FETCH_POST_BY_USER_ID',
-      loadStart: LOAD_POST_BY_USER_START,
-      loadEnd: LOAD_POST_BY_USER_END,
+      pendingType: LOAD_POST_BY_USER_START,
+      rejectedType: 'FETCH_POST_BY_USER_ID_REJECTED',
+      fulfilledType: LOAD_POST_BY_USER_END,
       payload: Promise.resolve(
         {
           'userId': 1,

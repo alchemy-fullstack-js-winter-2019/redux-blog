@@ -1,7 +1,11 @@
 import { getComments } from '../services/blogApi';
 
+export const LOAD_COMMENTS_START = 'LOAD_COMMENTS_START';
+export const LOAD_COMMENTS_END = 'LOAD_COMMENTS_END';
 export const FETCH_COMMENTS = 'FETCH_COMMENTS';
 export const fetchComments = id => ({
   type: FETCH_COMMENTS,
-  payload: getComments(id)
+  loadStart: LOAD_COMMENTS_START,
+  payload: getComments(id),
+  loadEnd: LOAD_COMMENTS_END
 });

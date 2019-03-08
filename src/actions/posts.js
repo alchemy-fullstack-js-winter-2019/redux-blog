@@ -38,7 +38,6 @@ export const getCommentsByIdAction = (id) => ({
 
 
 export const GET_USER_POSTS = 'GET_USER_POSTS';
-
 export const getPostsByIdAction = (id) => ({
   type: GET_USER_POSTS,
   payload: getPostsById(id)

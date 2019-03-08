@@ -1,4 +1,4 @@
-import { getPost, getPosts, getFilteredPosts } from './posts';
+import { getPost, getPosts, getFilteredPosts, getLongestPosts } from './posts';
 
 describe('posts selectors test', () => {
   it('can get a list of posts', () => {
@@ -31,5 +31,25 @@ describe('posts selectors test', () => {
     };
     const filteredPost = getFilteredPosts(state);
     expect(filteredPost).toEqual([{ title: '420' }]);
+  });
+  it('can get a list of longest posts', () => {
+    const state = {
+      posts: {
+        posts: [
+          { body: '1' }, 
+          { body: '11' }, 
+          { body: '111' }, 
+          { body: '1111' }, 
+          { body: '11111' }]
+      }
+    };
+    const longestPosts = getLongestPosts(state);
+    expect(longestPosts).toEqual([
+      { body: '11111' },
+      { body: '1111' }, 
+      { body: '111' }, 
+      { body: '11' }, 
+      { body: '1' }
+    ]);
   });
 });

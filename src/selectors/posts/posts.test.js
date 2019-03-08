@@ -1,4 +1,4 @@
-import { getPost, getPosts } from './posts';
+import { getPost, getPosts, getFilteredPosts } from './posts';
 
 describe('posts selectors test', () => {
   it('can get a list of posts', () => {
@@ -21,5 +21,15 @@ describe('posts selectors test', () => {
     };
     const selectedPost = getPost(state);
     expect(selectedPost).toEqual({ body: 'Hello' });
+  });
+  it('can get a filterd post', () => {
+    const state = {
+      posts: {
+        posts: [{ title: 'orange' }, { title: 'banana' }, { title:'420' }], 
+        searchTerm: '420'
+      }
+    };
+    const filteredPost = getFilteredPosts(state);
+    expect(filteredPost).toEqual([{ title: '420' }]);
   });
 });

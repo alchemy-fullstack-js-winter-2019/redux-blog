@@ -1,5 +1,5 @@
 import reducer from './posts';
-import { FETCH_POST, FETCH_POSTS } from '../action/posts';
+import { FETCH_POST, FETCH_POSTS, UPDATE_POST_SEARCH_TERM } from '../action/posts';
 
 describe('posts reducer tests', () => {
   it('can fetch posts from state', () => {
@@ -24,5 +24,15 @@ describe('posts reducer tests', () => {
       payload: { name: 'jerk' }
     });
     expect(reducerPost).toEqual({ post: { name: 'jerk' } });
+  });
+  it('can update a search term', () => {
+    const state = {
+      searchTerm: 'ok'
+    };
+    const reducerSearchTerm = reducer(state, {
+      type: UPDATE_POST_SEARCH_TERM,
+      payload: 'vanana'
+    });
+    expect(reducerSearchTerm).toEqual({ searchTerm: 'vanana' });
   });
 });

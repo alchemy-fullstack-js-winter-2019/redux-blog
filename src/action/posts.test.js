@@ -1,4 +1,4 @@
-import { fetchPost, fetchPosts } from './posts';
+import { fetchPost, fetchPosts, updatePostSearchTerm } from './posts';
 
 jest.mock('../services/blogApi');
 
@@ -35,6 +35,13 @@ describe('posts actions', () => {
           'body': 'est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla'
         }
       )
+    });
+  });
+  it('can update a search term', () => {
+    const updatedPostSearchTerm = updatePostSearchTerm('term');
+    expect(updatedPostSearchTerm).toEqual({
+      type: 'UPDATE_POST_SEARCH_TERM',
+      payload: 'term'
     });
   });
 });

@@ -11,3 +11,9 @@ export const getFilteredPosts = state => {
     return title.includes(searchTerm);
   });
 };
+
+export const getLongestPosts = state => {
+  return state.posts.posts.sort((a, b) => {
+    return a.body.length - b.body.length;
+  }).slice(0, 5);
+};

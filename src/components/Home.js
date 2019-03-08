@@ -1,14 +1,26 @@
 import React from 'react';
 import Header from './Header';
+import PropTypes from 'prop-types';
 
-function Home() {
+function Home({ posts }) {
+  const postList = posts.map(post => {
+    return (
+      <li key={post.id}>{post.title}</li>
+    );
+  });
   return (
     <>
       <Header />
-      <h1>YO YO ITS HOME</h1>
+      <ul>
+        {postList}
+      </ul>
     </>
   );
 }
+
+Home.propTypes = {
+  posts: PropTypes.array.isRequired
+};
 
 export default Home;
 

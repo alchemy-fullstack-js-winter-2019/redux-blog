@@ -43,3 +43,10 @@ export const getPostsByIdAction = (id) => ({
   type: GET_USER_POSTS,
   payload: getPostsById(id)
 });
+
+
+export const UPDATE_SEARCH_TERM = 'UPDATE_SEARCH_TERM';
+export const updateSearchTerm = term => ({
+  type: UPDATE_SEARCH_TERM,
+  payload: term
+});

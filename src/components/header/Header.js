@@ -9,7 +9,7 @@ import {
 export default function Header() {
   return (
     <nav>
-      <Link to='/home'> Home </ Link>
+      <Link to='/'> Home </ Link>
       <Link to='/posts'> Posts </ Link>
       <Link to='/users'> Users </ Link>
 

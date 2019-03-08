@@ -8,9 +8,9 @@ import UserDetailContainer from './containers/users/UserDetailContainer';
 
 export const ROUTES  = {
   HOME: {
-    path: '/home',
+    path: '/',
     component: Home,
-    linkTo: () => '/home'
+    linkTo: () => '/'
   },
   POSTS: {
     path: '/posts',

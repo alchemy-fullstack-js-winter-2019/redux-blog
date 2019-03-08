@@ -3,8 +3,7 @@ import { FETCH_POSTS, FETCH_POST, UPDATE_POST_SEARCH_TERM } from '../action/post
 const initialState = {
   posts: [],
   post: {},
-  searchTerm: '',
-  longestPosts: []
+  searchTerm: ''
 };
 
 export default function reducer(state = initialState, action) {

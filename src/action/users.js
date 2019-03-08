@@ -24,6 +24,7 @@ export const fetchUser = (id) => ({
 
 export const LOAD_POST_BY_USER_START = 'LOAD_POST_BY_USER_START';
 export const LOAD_POST_BY_USER_END = 'LOAD_POST_BY_USER_END';
+
 export const FETCH_POST_BY_USER_ID = 'FETCH_POST_BY_USER_ID';
 export const fetchPostByUserId = (id) => ({
   type: FETCH_POST_BY_USER_ID,

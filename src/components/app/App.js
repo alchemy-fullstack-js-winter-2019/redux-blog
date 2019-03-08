@@ -12,8 +12,8 @@ export default function App() {
     <Router>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/users" component={AllUsers} />
         <Route exact path="/users/:id" component={User} />
+        <Route exact path="/users" component={AllUsers} />
         <Route exact path="/posts" component={AllPosts} />
         <Route exact path="/posts/:id" component={Post} />
       </Switch>

@@ -1,4 +1,5 @@
 import { FETCH_USERS, FETCH_USER, FETCH_POST_BY_USER_ID } from '../action/users';
+import { RESET } from '../action/common/reset';
 
 const initialState = {
   users: [],
@@ -14,6 +15,8 @@ export default function reducers(state = initialState, action) {
       return { ...state, user: action.payload };
     case FETCH_POST_BY_USER_ID:
       return { ...state, posts: action.payload };
+    case RESET:
+      return { ...initialState };
     default:
       return state;
   }

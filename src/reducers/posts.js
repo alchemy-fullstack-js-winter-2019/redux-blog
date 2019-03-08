@@ -1,4 +1,5 @@
 import { FETCH_POSTS, FETCH_POST, UPDATE_POST_SEARCH_TERM } from '../action/posts';
+import { RESET } from '../action/common/reset';
 
 const initialState = {
   posts: [],
@@ -14,6 +15,8 @@ export default function reducer(state = initialState, action) {
       return { ...state, post: action.payload };
     case UPDATE_POST_SEARCH_TERM:
       return { ...state, searchTerm: action.payload };
+    case RESET:
+      return { ...initialState };
     default: 
       return state;
   }

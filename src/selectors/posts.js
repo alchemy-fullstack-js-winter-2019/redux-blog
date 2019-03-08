@@ -14,6 +14,15 @@ export const getCommentsById = state => {
 
 export const getPostsById = state => state.users.postsByUser;
 
+export const getLongestPost = state => {
+  const postBodies = getPosts(state).map(obj => obj.body).sort((a, b) => {
+    if(a.length > b.length) return -1;
+    if(a.length < b.length) return 1;
+    return 0;
+  }).slice(0, 5);
+  return postBodies;
+};
+
 
 export const getPostsBySearch = (state) => {
   const searchTerm = getSearchTerm(state);

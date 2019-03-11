@@ -1,5 +1,7 @@
+/* eslint-env node */
 const HtmlPlugin = require('html-webpack-plugin');
 const CleanPlugin = require('clean-webpack-plugin');
+
 
 module.exports = {
   entry: ['@babel/polyfill', './src/index.js'],

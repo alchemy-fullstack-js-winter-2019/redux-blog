@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Post matches a snapshot 1`] = `
+Array [
+  <a
+    className="link"
+    href="/posts/undefined"
+    onClick={[Function]}
+  >
+    <h3>
+      title
+    </h3>
+  </a>,
+  <p
+    className="postBody"
+  >
+    body
+  </p>,
+]
+`;

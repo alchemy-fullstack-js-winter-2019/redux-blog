@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Posts matches a snapshot 1`] = `
+Array [
+  <h2
+    className="usersTitle"
+  >
+    Users
+  </h2>,
+  <ol>
+    <li
+      className="userLink"
+    >
+      <div>
+        <div
+          className="MuiGrid-item-5 MuiGrid-grid-xs-12-44 MuiGrid-grid-md-6-66"
+        >
+          <h6
+            className="MuiTypography-root-101 MuiTypography-h6-118"
+          />
+          <div>
+            <ul
+              className="MuiList-root-137 MuiList-padding-138"
+            >
+              <li
+                className="MuiListItem-root-141 MuiListItem-default-144 MuiListItem-dense-145 MuiListItem-gutters-149"
+                disabled={false}
+              >
+                <div
+                  className="MuiAvatar-root-156 MuiAvatar-colorDefault-157"
+                >
+                  <img
+                    src="../../../account.png"
+                  />
+                </div>
+                <a
+                  className="link"
+                  href="/users/undefined"
+                  onClick={[Function]}
+                >
+                  <div
+                    className="MuiListItemText-root-159"
+                  />
+                  <h2>
+                    name
+                  </h2>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ol>,
+]
+`;

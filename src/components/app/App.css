@@ -1,0 +1,97 @@
+* {
+  font-family: 'Raleway', sans-serif;
+  .nav {
+    width: 100vw;
+    margin-bottom: 30px;
+  }
+  li {
+    margin-left: 40px;
+    margin-right: 40px;
+    list-style-type: none;
+    margin-bottom: 20px;
+  }
+  .link {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    :hover {
+      color: lightgray;
+      font-size: 1.5em;
+    }
+  }
+  .userLink {
+    color: black;
+    font-weight: 100;
+    :hover {
+      color: darkgray;
+    }
+  }
+  .headerLink {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    :active {
+      font-size: 1.4em;
+    }
+  }
+  .title {
+    margin: 50px 0;
+    text-align: center;
+    font-size: 5em;
+    font-weight: 300;
+  }
+  .usersTitle {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 400;
+  }
+  .userDetail {
+    text-align: center;
+    font-size: 1.2em;
+  }
+  .postsTitle {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 35px;
+  }
+  h2 {
+    margin: 0 30px;
+    font-weight: 300;
+  }
+  h3 {
+    margin-bottom: 0;
+  }
+  .postBody {
+    font-weight: 300;
+    font-size: 1.2em;
+    margin: 0 20px;
+  }
+  .body {
+    font-weight: 200;
+    margin: 0 20px;
+  }
+  .comment {
+    margin-bottom: 50px;
+  }
+  .search {
+    margin: 0;
+    width: 300px;
+  }
+  .postsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .postTitle {
+    font-size: 1.7em;
+    font-weight: 400;
+    text-align: center;
+  }
+  h4 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.5em;
+  }
+}

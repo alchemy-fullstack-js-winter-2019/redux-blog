@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Posts matches a snapshot 1`] = `
+<div
+  className="postsContainer"
+>
+  <h2
+    className="postsTitle"
+  >
+    Posts
+  </h2>
+  <div
+    className="MuiInputBase-root-16 MuiInput-root-3 MuiInput-underline-7 search"
+    onClick={[Function]}
+  >
+    <input
+      aria-label="Description"
+      className="MuiInputBase-input-26 MuiInput-input-11"
+      name="term"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder="Search"
+      type="text"
+    />
+  </div>
+  <ul>
+    <li>
+      <a
+        className="link"
+        href="/posts/undefined"
+        onClick={[Function]}
+      >
+        <h3>
+          title
+        </h3>
+      </a>
+      <p
+        className="postBody"
+      >
+        body
+      </p>
+    </li>
+  </ul>
+</div>
+`;

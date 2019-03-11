@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Comments matches a snapshot 1`] = `
+<ul
+  className="body"
+>
+  <li>
+    <div
+      className="comment"
+    >
+      <p>
+        comment
+      </p>
+      <p>
+        Email: 
+        email@email.com
+      </p>
+    </div>
+  </li>
+</ul>
+`;

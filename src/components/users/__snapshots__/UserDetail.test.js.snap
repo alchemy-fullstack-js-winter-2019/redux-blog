@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserDetail matches a snapshot 1`] = `
+Array [
+  <div
+    className="userDetail"
+  >
+    <h2>
+      name
+    </h2>
+    <p>
+      Email: 
+      email@email
+    </p>
+    <p>
+      Username: 
+      username
+    </p>
+  </div>,
+  <h2>
+    Posts
+  </h2>,
+  <ul>
+    <li>
+      <a
+        className="link"
+        href="/posts/undefined"
+        onClick={[Function]}
+      >
+        <h3>
+          title1
+        </h3>
+      </a>
+      <p
+        className="postBody"
+      >
+        body1
+      </p>
+    </li>
+    <li>
+      <a
+        className="link"
+        href="/posts/undefined"
+        onClick={[Function]}
+      >
+        <h3>
+          title2
+        </h3>
+      </a>
+      <p
+        className="postBody"
+      >
+        body2
+      </p>
+    </li>
+  </ul>,
+]
+`;

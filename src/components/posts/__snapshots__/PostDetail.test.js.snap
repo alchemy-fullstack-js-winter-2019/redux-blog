@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Post matches a snapshot 1`] = `
+Array [
+  <h2
+    className="postTitle"
+  >
+    title
+  </h2>,
+  <h4>
+    By: 
+    name
+  </h4>,
+  <p
+    className="postBody"
+  >
+    body
+  </p>,
+  <h4>
+    Comments
+  </h4>,
+  <ul
+    className="body"
+  >
+    <li>
+      <div
+        className="comment"
+      >
+        <p>
+          body1
+        </p>
+        <p>
+          Email: 
+        </p>
+      </div>
+    </li>
+    <li>
+      <div
+        className="comment"
+      >
+        <p>
+          body2
+        </p>
+        <p>
+          Email: 
+        </p>
+      </div>
+    </li>
+  </ul>,
+]
+`;

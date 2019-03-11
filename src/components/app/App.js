@@ -8,7 +8,6 @@ import AllPosts from '../../containers/AllPosts';
 
 export default function App() {
   return (
-    <>
     <Router>
       <Switch>
         <Route exact path="/" component={Home} />
@@ -18,6 +17,5 @@ export default function App() {
         <Route exact path="/posts/:id" component={Post} />
       </Switch>
     </Router>
-    </>
   );
 }

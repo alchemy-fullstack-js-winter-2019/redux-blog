@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Comments matches a snapshot 1`] = `
+<ul
+  className="Comments"
+>
+  <li>
+    <div
+      className="Comment"
+    >
+      <p>
+        laudantium enim quasi est quidem magnam voluptate ipsam eos tempora quo necessitatibus dolor quam autem quasi reiciendis et nam sapiente accusantium
+      </p>
+      <h4>
+        -
+        Eliseo@gardner.biz
+      </h4>
+    </div>
+  </li>
+  <li>
+    <div
+      className="Comment"
+    >
+      <p>
+        laudantium enim quasi est quidem magnam voluptate ipsam eos tempora quo necessitatibus dolor quam autem quasi reiciendis et nam sapiente accusantium
+      </p>
+      <h4>
+        -
+        Eliseo@gardner.biz
+      </h4>
+    </div>
+  </li>
+  <li>
+    <div
+      className="Comment"
+    >
+      <p>
+        laudantium enim quasi est quidem magnam voluptate ipsam eos tempora quo necessitatibus dolor quam autem quasi reiciendis et nam sapiente accusantium
+      </p>
+      <h4>
+        -
+        Eliseo@gardner.biz
+      </h4>
+    </div>
+  </li>
+</ul>
+`;

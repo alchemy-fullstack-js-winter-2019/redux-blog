@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Users matches a snapshot 1`] = `
+<ul
+  className="Users"
+>
+  <li>
+    <a
+      className="User"
+      href="/users/1"
+      onClick={[Function]}
+    >
+      <div>
+        <h3>
+          kaiya
+        </h3>
+        <h4>
+          ladybeard
+        </h4>
+        <p>
+          schnepherds4life.org
+           / 
+          itsme@kai.com
+        </p>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a
+      className="User"
+      href="/users/2"
+      onClick={[Function]}
+    >
+      <div>
+        <h3>
+          kingsley
+        </h3>
+        <h4>
+          fathersLittleTiger
+        </h4>
+        <p>
+          carolKibble.org
+           / 
+          yasssss@kitty.com
+        </p>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a
+      className="User"
+      href="/users/3"
+      onClick={[Function]}
+    >
+      <div>
+        <h3>
+          tyler
+        </h3>
+        <h4>
+          tylerCorbett
+        </h4>
+        <p>
+          tylerTheDev.org
+           / 
+          sayhi@tyler.com
+        </p>
+      </div>
+    </a>
+  </li>
+</ul>
+`;

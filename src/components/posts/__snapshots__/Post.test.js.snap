@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Post matches a post snapshot 1`] = `
+<div
+  className="Post"
+>
+  <a
+    href="/posts/2"
+    onClick={[Function]}
+  >
+    <h2>
+      A Post
+    </h2>
+  </a>
+  <p>
+    This is a post on a rant
+  </p>
+</div>
+`;

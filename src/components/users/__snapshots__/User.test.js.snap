@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User Snapshot matches a snapshot 1`] = `
+<a
+  href="/users/1"
+  onClick={[Function]}
+>
+  <li>
+    Bret
+  </li>
+</a>
+`;

@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Snapshot matches a snapshot 1`] = `
+Array [
+  <nav>
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      href="/users"
+      onClick={[Function]}
+    >
+      Users
+    </a>
+    <a
+      href="/posts"
+      onClick={[Function]}
+    >
+      Posts
+    </a>
+    <a
+      href="/users/1"
+      onClick={[Function]}
+    >
+      Example User
+    </a>
+    <a
+      href="/posts/1"
+      onClick={[Function]}
+    >
+      Example Post
+    </a>
+  </nav>,
+  <ul>
+    <li>
+      sunt aut facere repellat provident occaecati excepturi optio reprehenderit
+    </li>
+    <li>
+      qui est esse
+    </li>
+  </ul>,
+]
+`;

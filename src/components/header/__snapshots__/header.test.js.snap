@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header matches a snapshot 1`] = `
+<header
+  className="sc-kAzzGY oWygE"
+>
+  <nav>
+    <a
+      className="sc-cSHVUG Rlhpe"
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      className="sc-cSHVUG Rlhpe"
+      href="/users"
+      onClick={[Function]}
+    >
+      Users
+    </a>
+    <a
+      className="sc-cSHVUG Rlhpe"
+      href="/comments"
+      onClick={[Function]}
+    >
+      Comments
+    </a>
+    <a
+      className="sc-cSHVUG Rlhpe"
+      href="/posts"
+      onClick={[Function]}
+    >
+      Posts
+    </a>
+  </nav>
+</header>
+`;

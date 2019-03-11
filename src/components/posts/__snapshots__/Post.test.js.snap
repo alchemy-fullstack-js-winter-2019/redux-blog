@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Post matches a snapshot 1`] = `
+<li>
+  <h2>
+    5
+  </h2>
+  <h3>
+    sunt aut facere repellat provident occaecati excepturi optio reprehenderit
+  </h3>
+  <h4>
+    quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto
+  </h4>
+</li>
+`;

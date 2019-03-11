@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`users matches a snapshot 1`] = `
+<div
+  data-radium={true}
+>
+  <h1
+    className="sc-jTzLTM eQCvsM"
+  >
+     OUR CLIENTS 
+  </h1>
+  <ul
+    className="sc-jzJRlG cXQqel"
+  >
+    <div
+      data-radium={true}
+      style={
+        Object {
+          "animation": "x 1s",
+          "animationName": "fadeInLeft-radium-animation-1685c3c6",
+        }
+      }
+    >
+      <img
+        className="sc-fjdhpX lheVPl"
+        src=""
+      />
+    </div>
+    <div
+      data-radium={true}
+      style={
+        Object {
+          "animation": "x 1s",
+          "animationName": "fadeInRight-radium-animation-2beba6ab",
+        }
+      }
+    >
+      <img
+        className="sc-fjdhpX lheVPl"
+        src=""
+        style={
+          Object {
+            "animation": "x 1s",
+            "animationName": Object {
+              "__process": [Function],
+              "__radiumKeyframes": true,
+            },
+          }
+        }
+      />
+    </div>
+  </ul>
+  <ul
+    className="sc-gqjmRU gPYFYv"
+  >
+    <a
+      className="sc-VigVT khMpwJ"
+      href="/users/23"
+      onClick={[Function]}
+    >
+       
+      Clementina DuBuque
+       
+    </a>
+    <a
+      className="sc-VigVT khMpwJ"
+      href="/users/5"
+      onClick={[Function]}
+    >
+       
+      Kurtis Weissnat
+       
+    </a>
+  </ul>
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "@keyframes fadeInLeft-radium-animation-1685c3c6 {
+from{opacity: 0;
+transform: translate3d(-100%, 0, 0);}
+to{opacity: 1;
+transform: none;}
+}
+
+@keyframes fadeInRight-radium-animation-2beba6ab {
+from{opacity: 0;
+transform: translate3d(100%, 0, 0);}
+to{opacity: 1;
+transform: none;}
+}
+",
+      }
+    }
+  />
+</div>
+`;
